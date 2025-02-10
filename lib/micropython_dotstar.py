@@ -140,7 +140,7 @@ class DotStar:
             rgb = (value >> 16, (value >> 8) & 0xff, value & 0xff)
 
         if len(rgb) == 4:
-            brightness = value[3]
+            brightness = value[3] # type: ignore
             # Ignore value[3] below.
         else:
             brightness = 1
